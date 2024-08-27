@@ -1,6 +1,10 @@
 Project Name: AWS Infrastructure Setup
+
+
+
 Overview:
 This project sets up an AWS infrastructure using Terraform, focusing on various components such as VPC, security groups, S3 backend, Elastic Beanstalk applications, and key pairs. The infrastructure is modularized and is meant to be reusable and scalable. This README file provides an overview of the Terraform scripts used and their purpose.
+
 
 Table of Contents: 
 Pre-requisites
@@ -9,12 +13,17 @@ Terraform Scripts Description
 Usage
 Authors
 
+
+
 Pre-requisites:
 Before you begin, ensure you have the following installed on your local machine:
 
 Terraform (v0.12+)
 AWS CLI configured with appropriate credentials
 An AWS account
+
+
+
 File Structure
 The project is organized into the following files:
 
@@ -28,7 +37,11 @@ Copy code
 ├── secgrp.tf
 ├── vars.tf
 └── vpc.tf
+
+
 ##########################################################################################
+
+
 Terraform Scripts Description:
 1. backend-s3.tf
 Purpose: Sets up an S3 bucket to be used as a backend for storing Terraform state files.
@@ -54,7 +67,11 @@ Details: Variables for AWS region, environment, and other configurable parameter
 8. vpc.tf
 Purpose: Sets up the Virtual Private Cloud (VPC) environment.
 Details: Configures subnets, route tables, internet gateways, and other VPC-related components. Uses a modular approach for easy maintenance and scalability.
+
+
 #################################################################################################
+
+
 Usage
 Clone the repository:
 
@@ -90,5 +107,7 @@ bash
 Copy code
 terraform destroy
 #########################################
+
+
 Authors
 Ibukunoluwa Adeagbo
